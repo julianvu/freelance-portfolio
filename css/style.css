@@ -11375,3 +11375,13 @@ body {
             transform: translateY(-8px);
   }
 }
+
+#services .card {
+  background-color: #212161;
+  border-radius: 16px;
+}
+
+#services .card .card-header {
+  background-color: #2e2e72;
+  border-radius: 16px;
+}

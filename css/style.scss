@@ -73,3 +73,14 @@ body {
     }
   }
 }
+
+#services {
+  .card {
+    background-color: #212161;
+    border-radius: 16px;
+    .card-header {
+      background-color: #2e2e72;
+      border-radius: 16px;
+    }
+  }
+}
