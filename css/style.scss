@@ -4,12 +4,14 @@ $secondary: #78c0e0;
 $secondary-2: #abf3ff;
 $light: #f0f3ff;
 $cta: #ffe458;
+$neutral-light: #e3e8ff;
 
 $theme-colors: (
   "primary-2": $primary-2,
   "secondary": $secondary,
   "secondary-2": $secondary-2,
   "cta": $cta,
+  "neutral-light": $neutral-light,
 );
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
@@ -40,19 +42,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  #cta {
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-    &:hover {
-      transform: translateY(-6px);
-    }
-    .cta-icon {
-      background: url("../img/rocket-2---filled\(24x24\)@1x\ 2.svg");
-      height: 24px;
-      width: 24px;
-      display: block;
-    }
-  }
-
   .chevron-down {
     animation-name: bounce;
     animation-duration: 0.8s;
@@ -74,6 +63,22 @@ body {
   }
 }
 
+.cta {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  &:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.35);
+    transform: translateY(-6px);
+  }
+  .cta-icon {
+    background: url("../img/rocket-2---filled\(24x24\)@1x\ 2.svg");
+    height: 24px;
+    width: 24px;
+    display: block;
+  }
+}
+
 #services {
   .card {
     background-color: #212161;
@@ -82,5 +87,14 @@ body {
       background-color: #2e2e72;
       border-radius: 16px;
     }
+  }
+}
+
+#benefits {
+  .card {
+    background-color: $neutral-light;
+    border-style: none;
+    border-radius: 32px;
+    box-shadow: 0px 8px 16px 0px #b6c1f5;
   }
 }
