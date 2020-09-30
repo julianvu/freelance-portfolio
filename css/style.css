@@ -11456,6 +11456,10 @@ a.text-neutral-light:hover, a.text-neutral-light:focus {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", "sans-serif";
 }
@@ -11468,6 +11472,7 @@ body {
 
 .navbar #hire-me {
   border: 3px solid #f0f3ff;
+  color: #f0f3ff;
 }
 
 .navbar .navbar-toggler {

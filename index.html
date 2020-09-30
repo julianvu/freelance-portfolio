@@ -26,7 +26,7 @@
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -379,7 +379,7 @@
             <p class="text-light">contact@julianvu.dev</p>
             
         </div>
-        <div class="col-sm-6 text-right">
+        <div class="col-sm-6">
           <div class="d-flex flex-row justify-content-start justify-content-sm-end mb-3 ">
             <img src="img/GitHub.svg" alt="GitHub logo">
             <div class="mx-1"></div>
@@ -389,6 +389,7 @@
             <div class="mx-1"></div>
             <img src="img/Twitter.svg" alt="Twitter logo">
         </div>
+        <p class="text-light text-sm-right">Copyright &copy; <span id="year"></span> Julian Vu</p>
       </div>
     </div>
   </footer>
@@ -401,6 +402,35 @@
   <script>
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
+
+    var offsetHeight = $("#main-nav").innerHeight();
+
+      $("body").scrollspy({
+        target: "#main-nav",
+        offset: offsetHeight,
+      });
+
+      $("#main-nav a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - offsetHeight + 1,
+            },
+            500,
+            function () {
+              if (history.pushState) {
+                history.pushState(null, null, hash);
+              } else {
+                window.location.hash = hash;
+              }
+            }
+          );
+        }
+      });
   </script>
 </body>
 
