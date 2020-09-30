@@ -133,3 +133,28 @@ body {
         }
     }
 }
+
+#contact {
+    .form-control {
+        border-radius: 8px;
+    }
+
+    #accordion {
+        .card {
+            background-color: #212161;
+            border-radius: 16px;
+            .card-header {
+                background-color: #2e2e72;
+                border-radius: 16px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #04043b;
+}

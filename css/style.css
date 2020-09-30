@@ -11603,3 +11603,25 @@ body {
   color: #78c0e0;
   border-bottom-color: #78c0e0;
 }
+
+#contact .form-control {
+  border-radius: 8px;
+}
+
+#contact #accordion .card {
+  background-color: #212161;
+  border-radius: 16px;
+}
+
+#contact #accordion .card .card-header {
+  background-color: #2e2e72;
+  border-radius: 16px;
+}
+
+#contact #accordion .card .card-header:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #04043b;
+}
