@@ -11638,3 +11638,14 @@ body {
 footer {
   background-color: #04043b;
 }
+
+footer a img {
+  -webkit-transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+footer a img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1) translateY(-6px);
+          transform: scale(1.1) translateY(-6px);
+}
