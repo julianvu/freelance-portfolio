@@ -1,0 +1,25 @@
+<script>
+    var offsetHeight = $("#main-nav").innerHeight();
+
+    $("#main-nav a, a.cta-button").on("click", function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top - offsetHeight + 1,
+                },
+                500,
+                function () {
+                    if (history.pushState) {
+                        history.pushState(null, null, hash);
+                    } else {
+                        window.location.hash = hash;
+                    }
+                }
+            );
+        }
+    });
+</script>

@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: blog
+title: Blog - Julian Vu | Web Developer
+---
+
+<section id="blog" class="bg-primary">
+    <section
+        id="blog-hero"
+        class="jumbotron jumbotron-fluid text-light bg-primary"
+    >
+        <div class="container mt-5 pt-5">
+            <h1 class="font-weight-bold">Blog</h1>
+            <div class="my-3"></div>
+            <h3>
+                Read about case studies of projects I've worked on in the past,
+                and learn about how to make a website work for you.
+            </h3>
+        </div>
+    </section>
+    <section id="blog-posts">
+        {% for post in site.posts %}
+        <div class="container">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <img
+                            src="/img/julianvu-profile.JPG"
+                            alt=""
+                            class="w-100 mh-75"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <p class="card-header">Title</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</section>

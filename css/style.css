@@ -7884,7 +7884,7 @@ body {
   border-style: none;
 }
 
-.jumbotron {
+#home {
   overflow: hidden;
   background: url("../img/hero-personal-logo-faded.svg"), linear-gradient(237.75deg, #0e0e52 14.94%, #78c0e0 111.14%);
   background-size: cover;
@@ -7892,7 +7892,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.jumbotron .chevron-down {
+#home .chevron-down {
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -webkit-animation-duration: 0.8s;
@@ -7931,6 +7931,15 @@ body {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px);
   }
+}
+
+#blog #blog-hero {
+  overflow: hidden;
+}
+
+#blog #blog-posts .card {
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .main-button {
