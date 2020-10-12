@@ -3,7 +3,7 @@ layout: post
 title: "Case Study: Jitter Cafe Homepage"
 author: Julian Vu
 category: case study
-featured-image: /img/jitter-screenshot.png
+featured-image: /img/jitter-screenshot.jpg
 excerpt: "This project uses beautiful photography as the foundation for its colors. The webpage is simple and visually cohesive. Any coffee drinker is sure to find comfort in the warm and familiar tones."
 ---
 
