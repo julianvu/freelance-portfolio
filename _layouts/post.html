@@ -3,46 +3,17 @@ layout: default
 ---
 
 <section class="blog-post bg-primary flex-fill pt-5">
+  <div class="container-fluid p-0 mt-4">
+    <img src="{{ page.featured-image }}" alt="" class="featured-image w-100" />
+  </div>
   <article class="container text-center text-light mt-5 pt-5">
     <p>{{ page.date | date_to_string }}</p>
     <h1 class="font-weight-bold display-4">{{ page.title }}</h1>
     <p class="lead">{{ page.excerpt }}</p>
     <p>{{ page.author }}</p>
   </article>
-  <div class="container-fluid p-0 mt-5">
-    <img src="{{ page.featured-image }}" alt="" class="featured-image w-100" />
-  </div>
   <article class="article container text-light mt-5">
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, facilis! Est
-      eum eligendi dicta magni vero voluptas, possimus fugit dolores hic porro
-      harum assumenda repellat!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae
-      quisquam rem, veniam provident obcaecati fuga ducimus minima atque
-      distinctio, rerum neque unde necessitatibus similique totam cum. Impedit,
-      nostrum nulla sequi laudantium consectetur in exercitationem odit vero
-      ipsam eos ut a quam debitis voluptate consequatur asperiores suscipit
-      minima quibusdam sed?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, esse!
-      Quia, doloribus qui commodi illo pariatur cumque laudantium quasi porro
-      asperiores dolore esse minima tempora facere illum iste dolorum similique
-      fugiat animi, aliquid repellendus nemo earum, voluptates recusandae?
-      Placeat quis vitae vel, excepturi cumque commodi molestias atque ea nulla
-      temporibus.
-    </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dolore!
-      Officiis suscipit minus quod impedit distinctio iure expedita iste
-      repudiandae quis in recusandae, nisi odio autem ea a dicta officia
-      accusamus assumenda laboriosam ratione veniam. Explicabo enim esse tempore
-      necessitatibus facere non voluptatibus rem consectetur, dolores hic atque,
-      itaque natus?
-    </p>
-    <h3 class="font-weight-bold display-5">Do you need a website?</h3>
+    {{ page.content }}
   </article>
   <div class="container">{% include contact.html %}</div>
 </section>
