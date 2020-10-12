@@ -130,6 +130,16 @@ body {
     height: 34vh;
   }
 
+  .article {
+    p {
+      margin-bottom: 2rem;
+    }
+
+    :is(h1, h2, h3, h4, h5, h6) {
+      margin-top: 4rem;
+    }
+  }
+
   @media (min-width: 48em) {
     .article {
       max-width: 46rem;
