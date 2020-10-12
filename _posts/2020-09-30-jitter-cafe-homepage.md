@@ -1,8 +1,9 @@
 ---
 layout: post
 author: Julian Vu
-category: blog
-slug: "1"
+category: Uncategorized
+featured-image: /img/jitter-screenshot.png
+excerpt: "Jitter Jitter."
 ---
 
 Jitter Jitter.

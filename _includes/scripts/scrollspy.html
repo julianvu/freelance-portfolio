@@ -1,6 +1,8 @@
 <script>
-    $("body").scrollspy({
-        target: "#main-nav",
-        offset: offsetHeight,
-    });
+  var offsetHeight = $("#main-nav").innerHeight();
+
+  $("body").scrollspy({
+    target: "#main-nav",
+    offset: offsetHeight,
+  });
 </script>
