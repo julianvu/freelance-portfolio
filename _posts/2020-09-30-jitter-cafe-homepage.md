@@ -41,4 +41,4 @@ A short feedback form at the bottom asks for minimal personal information, and a
 
 # The End
 
-At the bottom is the cafe's business address and phone number, so locals can easily contact the business with any further questions and comments without waiting for an email. For a local business like this cafe, being easily accessible to local customers is absolutely vital. Beyond that, knowing that their photography is excellent, social media links are also there for visitors to engage.
+At the bottom is the cafe's business address and phone number, so locals can easily contact the business with any further questions and comments without waiting for an email. For a local business like this cafe, being easily accessible to local customers is absolutely vital. Social media links are also included for visitors and customers to engage with the brand.
