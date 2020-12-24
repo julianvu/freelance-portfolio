@@ -7986,6 +7986,17 @@ body {
   margin-top: 4rem;
 }
 
+.blog-post .design-button {
+  border-bottom: 2px solid #78c0e0;
+  -webkit-transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.blog-post .design-button:hover {
+  color: #f0f3ff;
+  border-bottom-color: #f0f3ff;
+}
+
 @media (min-width: 48em) {
   .blog-post .article {
     max-width: 46rem;

@@ -140,6 +140,15 @@ body {
         }
     }
 
+    .design-button {
+        border-bottom: 2px solid $secondary;
+        transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        &:hover {
+            color: $light;
+            border-bottom-color: $light;
+        }
+    }
+
     @media (min-width: 48em) {
         .article {
             max-width: 46rem;
