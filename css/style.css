@@ -8058,10 +8058,6 @@ body {
   background-color: #daf6ff;
 }
 
-#portfolio #project-2 .main-button {
-  background-color: #ff48b7;
-}
-
 #portfolio #project-2 .case-study-button {
   border-bottom: 2px solid #0e0e52;
   -webkit-transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
